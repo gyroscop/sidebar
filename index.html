@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>sidebar</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<nav class="navbar">
+		<span class="open-sidebar">
+			<a href="#" onclick="openSlideMenu()">
+				<svg width="30px" height="30px">
+					<path d="M0,5 30,5" stroke="#ff0000" stroke-width="5" />
+					<path d="M0,14 30,14" stroke="#ffd633" stroke-width="5" />
+					<path d="M0,23 30,23" stroke="#6666ff" stroke-width="5" />
+
+				</svg>
+			</a>
+		</span>
+		<ul class="navbar-nav">
+			<li><a href="#" id="red">HOME</a></li>
+			<li><a href="#" id="yellow">ABOUT</a></li>
+			<li><a href="#" id="blue">SERVICES</a></li>
+			<li><a href="#" id="green">CONTACT</a></li>
+		</ul>
+	</nav>
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+		<a href="#">Account</a>
+		<a href="#">Preferences</a>
+		<a href="#">Settings</a>
+		<a href="#">Log-out</a>
+	</div>
+
+	<div id="main">
+		<h1>Responsive Side-Menu</h1>
+	</div>
+
+	<script type="text/javascript">
+		function openSlideMenu() {
+			document.getElementById("side-menu").style.width = '250px';
+			document.getElementById("main").style.marginLeft = '250px';
+		}
+
+		function closeSlideMenu() {
+			document.getElementById("side-menu").style.width = '0';
+			document.getElementById("main").style.marginLeft = '0';
+
+		}		
+	</script>
+</body>
+
+</html>
