@@ -1,0 +1,97 @@
+body{
+	background-color: #f2f2f2;
+}
+.navbar{
+	background-color: #3b5998;
+	overflow: hidden;
+	height: 60px;
+}
+.navbar a{
+	float:left;
+	display: block;
+	color: #f4f4f4;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar ul{
+   margin: 8px 0 0 0;
+    list-style: none;
+    justify-content: center;
+}
+   
+ #red,#yellow,#blue,#green{
+ 	border-radius: 5px;
+ }
+ 
+
+ #red:hover{
+    color: #ff0000;
+    
+ }
+ #yellow:hover{
+ color: #ffd633;
+ 	   
+  }
+  #blue:hover{
+  	color: #6666ff;
+  	   
+  }
+  #green:hover{
+  	color: #53ff1a;
+  	   
+  }
+
+  .side-nav{
+  	height: 100%;
+  	width: 0;
+  	position: fixed;
+  	background-color: #111;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	opacity: 0.9;
+  	transition: 0.5s;
+  	overflow-x: hidden;
+  	padding-top: 60px;
+
+  }
+  .side-nav a{
+      padding: 10px 10px 10px 30px;
+      color: #ccc;
+      display: block;
+      text-decoration: none;
+      font-size: 30px;
+      line-height: 50px;
+      transition: 0.3s;
+
+  }
+
+  .side-nav a:hover{
+  	color: #fff;
+  }
+
+  .side-nav .btn-close{
+  	position: absolute;
+  	top: 0;
+  	right: 22px;
+  	font-size: 23px;
+  	font-weight: bold;
+  	margin-left: 50px;
+  	color: #e62e00;
+  }
+  .open-sidebar a:hover{
+  	background-color: #a6a6a6;
+  }
+  #main{
+  	transition: margin-left 0.5s;
+  	padding: 20px;
+  	width: 100%;
+  	overflow: hidden;
+  }
+  @media(max-width:568px){
+  	.navbar-nav{display:none}
+
+  }

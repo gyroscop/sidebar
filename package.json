@@ -1,0 +1,13 @@
+{
+  "name": "sidebar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://gyroscop.github.io/sidebar",
+  "scripts": {},
+  "author": "Dibya Jyoti Sarmah",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
